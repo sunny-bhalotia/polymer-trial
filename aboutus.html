@@ -36,6 +36,22 @@ $(window).scroll(function() {
         $('#empathyimage').addClass('animated lightSpeedIn');
         $('#teamworkimage').addClass('animated fadeInRight'); //add infinite in between if needed
     }
+
+});
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 1100) {
+         $('#sunnyimage').addClass('animated bounceInLeft');
+     }
+
+     if ($(this).scrollTop() > 1500) {
+         $('#kishlayimage').addClass('animated bounceInRight');
+     }
+    
+    if ($(this).scrollTop() > 1900) {
+         $('#sushantimage').addClass('animated bounceInLeft');
+     }
+
 });
 
 
@@ -143,6 +159,49 @@ $(window).scroll(function() {
 </div>
 <div style="background-color:#404040;height:140px; width:100%; margin:0px; padding:0px; vertical-align: top; display:inline-block;"><h1 style="color:white; font-size:40px; font-family:Times; padding-top:30px; " align="center" class="animated infinite pulse">Meet the Team</div>
 
-<div style="background-color:#E3E3E3;height:900px; width:100%; margin:0px; padding:0px; vertical-align: top; display:inline-block;"></div>
+<div style="background-color:#E3E3E3;height:500px; width:100%; margin:0px; padding:0px; vertical-align: top; display:inline-block;">
+<table width="100%" cellpadding="30px">
+	<tr>
+		<td width="70%">
+		<label style="margin-left:400px;font-size:50px;color:#404040">Sunny Bhalotia</label><br/>
+		<label style="margin-left:450px;font-size:35px;color:#404011">140911462</label><br/>
+		</td>
+		<td>
+		<img src="Sunny.png" style="width:400px;height:400px;" id="sunnyimage">
+		</td>
+	</tr>
+</table>
+</div>
+
+<div style="background-color:#E3E3E3;height:500px; width:100%; margin:0px; padding:0px; vertical-align: top; display:inline-block;">
+<table width="100%" cellpadding="30px">
+	<tr>
+
+	<td width="30%">
+		<img src="Kishlay.png" style="width:400px;height:400px;" id="kishlayimage">
+		</td>
+		<td width="70%">
+		<label style="margin-left:400px;font-size:50px;color:#404040">Kishlay Kumar</label><br/>
+		<label style="margin-left:450px;font-size:35px;color:#404011">140911206</label><br/>
+		</td>
+		
+	</tr>
+</table>
+</div>
+
+<div style="background-color:#E3E3E3;height:500px; width:100%; margin:0px; padding:0px; vertical-align: top; display:inline-block;">
+<table width="100%" cellpadding="30px">
+	<tr>
+		<td width="70%">
+		<label style="margin-left:400px;font-size:50px;color:#404040">Sushant Bhat</label><br/>
+		<label style="margin-left:450px;font-size:35px;color:#404011">140911336</label><br/>
+		</td>
+		<td>
+		<img src="Sushant.png" style="width:400px;height:400px; " id="sushantimage">
+		</td>
+	</tr>
+</table>
+
+
 </body>
 </html>
