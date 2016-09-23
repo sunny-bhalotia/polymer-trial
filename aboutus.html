@@ -18,7 +18,29 @@
 		About Us
 	</title>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("h2").click(function(){
+        $(this).hide();
+    });
+});
 
+
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 300) {
+        
+        $('#focusimage').addClass('animated bounceInLeft');
+        $('#passionimage').addClass('animated fadeInLeft');
+        $('#empathyimage').addClass('animated lightSpeedIn');
+        $('#teamworkimage').addClass('animated fadeInRight'); //add infinite in between if needed
+    }
+});
+
+
+
+</script>
 
 <style type="text/css">
 	h2{
@@ -58,9 +80,9 @@
 <label id="biglabel" style="color: white;font-size: 150px;text-align: right; font-family:Arial;">HIGH VALUES</label>
 </td>
 </tr>
-<tr>
+<tr  >
 <td style="text-align:center">
-<label id="secondlabel" style="color: white;font-size: 25px;">OUR SUCCESS IS NOT ONLY DUE TO THE QUALITY OF OUR WORK;</label>
+<label  id="secondlabel" style="color: white;font-size: 25px;">OUR SUCCESS IS NOT ONLY DUE TO THE QUALITY OF OUR WORK;</label>
 </td>
 </tr>
 <td style="text-align:center">
@@ -89,16 +111,16 @@
 		</tr>
 
 		<tr>
-		<td style="width:20%;" align="center" class="animated infinite rubberBand" id="focusimage">
+		<td style="width:20%;" align="center" id="focusimage">
 		<img src="focus.png" style="display:block; width:80%; height:80%;" alt="Sorry">
 		</td>
-		<td style="width:20%;" align="center" class="animated infinite  jello">
+		<td style="width:20%;" align="center" id="passionimage">
 		<img src="passion.png" style="display:block; width:80%; height:80%;" alt="Sorry">
 		</td>
-		<td style="width:20%;" align="center" class="animated infinite tada">
+		<td style="width:20%;" align="center" id="empathyimage">
 		<img src="empathy.png" style="display:block; width:80%; height:80%;" alt="Sorry">
 		</td>
-		<td style="width:20%;" align="center" class="animated infinite flash">
+		<td style="width:20%;" align="center" id="teamworkimage">
 		<img src="teamwork.png" style="display:block; width:80%; height:80%;" alt="Sorry">
 		</td>
 		</tr>
@@ -119,7 +141,7 @@
 		</tr>
 	</table>
 </div>
-<div style="background-color:#404040;height:140px; width:100%; margin:0px; padding:0px; vertical-align: top; display:inline-block;"><h1 style="color:white; font-size:40px; font-family:Times; padding-top:30px; " align="center">Meet the Team</div>
+<div style="background-color:#404040;height:140px; width:100%; margin:0px; padding:0px; vertical-align: top; display:inline-block;"><h1 style="color:white; font-size:40px; font-family:Times; padding-top:30px; " align="center" class="animated infinite pulse">Meet the Team</div>
 
 <div style="background-color:#E3E3E3;height:900px; width:100%; margin:0px; padding:0px; vertical-align: top; display:inline-block;"></div>
 </body>
