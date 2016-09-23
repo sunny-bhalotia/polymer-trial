@@ -1,11 +1,91 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+    <link rel="import" href="../bower_components/paper-checkbox/paper-checkbox.html">
+    <link rel="import" href="../bower_components/paper-item/paper-item.html">
+    <link rel="import" href="../bower_components/paper-input/paper-input.html">
+    <link rel="import" href="../bower_components/paper-material/paper-material.html">
+    <link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+    <link rel="import" href="../bower_components/paper-fab/paper-fab.html">
+    <link rel="import" href="../bower_components/paper-button/paper-button.html">
+
+    <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+    <link rel="import" href="../bower_components/paper-toolbar/paper-toolbar.html">
+
 	<title>
 		About Us
 	</title>
+
+
+
+<style type="text/css">
+	h2{
+		font-family: Arial;
+		font-size: 40px;
+		color: black;
+   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+	}
+</style>
+
 </head>
-<body>
-<h1>Hellllo</h1>
+<body style="margin:0;padding:0;">
+<div style="background-color:red; height:900px; width:100%; margin:0px; padding:0px;">
+<paper-toolbar style="background-color:red;">
+  <paper-icon-button icon="menu" on-tap="menuAction"></paper-icon-button>
+  <div class="title">Title</div>
+  <paper-icon-button icon="more-vert" on-tap="moreAction"></paper-icon-button>
+</paper-toolbar>
+</div>
+<div style="background-color:#E3E3E3;height:900px; width:100%; margin:0px; padding:0px;">
+	
+	<table style="width:90%;height:100%;border:0;border-spacing:0;border-collapse: collapse;" align="center">
+		
+		<tr>
+		<td style="width:25%; height:50px;"align="center">
+		<h2>01</h2>
+		</td>
+		<td style="width:25%;height:50px;"  align="center">
+		<h2>02</h2>
+		</td>
+		<td style="width:25%;height:50px;" align="center">
+		<h2>03</h2>
+		</td>
+		<td style="width:25%;height:50px;" align="center">
+		<h2>04</h2>
+		</td>
+		</tr>
+
+		<tr>
+		<td style="width:25%;" align="center">
+		<img src="focus.png">
+		</td>
+		<td style="width:25%;" align="center">
+		<img src="passion.png">
+		</td>
+		<td style="width:25%;" align="center">
+		<img src="empathy.png">
+		</td>
+		<td style="width:25%;" align="center">
+		<img src="teamwork.png">
+		</td>
+		</tr>
+
+		<tr>
+		<td style="width:25%;" align="center">
+		</td>
+		<td style="width:25%;" align="center">
+		</td>
+		<td style="width:25%;" align="center">
+		</td>
+		<td style="width:25%;" align="center">
+		</td>
+		</tr>
+	</table>
+</div>
+<div style="background-color:#404040;height:140px; width:100%; margin:0px; padding:0px;"><h1 style="color:white; font-size:40px; font-family:Times; padding-top:50px;" align="center">Meet the Team<h1></div>
 </body>
 </html>
